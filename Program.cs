@@ -28,10 +28,6 @@ public class Program
         builder.Logging.AddJsonConsole(c =>
         {
             c.IncludeScopes = true;
-            c.JsonWriterOptions = new JsonWriterOptions()
-            {
-                Indented = true
-            };
         });
 
         var app = builder.Build();
